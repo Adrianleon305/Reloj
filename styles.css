@@ -1,0 +1,286 @@
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "roboto mono", monospace;
+    color: #ffe6e6;
+    background-image: url('backgraund.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    width: 328px;
+}
+
+.clock {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    padding: 50px 25px;
+    box-shadow: 0 25px 23px rgba(231, 143, 179, 0.12);
+    border: 1.5px solid rgba(255, 255, 255, 0.86);
+    border-radius: 10px;
+}
+
+
+/* Your existing CSS code here */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#fullscreenButton {
+    color: #fef6e4;
+    background-color: rgba(255, 192, 173, 0);
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 20PX;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+.shape1 {
+    background: linear-gradient(115deg, #e78fb3, #9656a1);
+    bottom: 350px;
+    right: -125px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+.shape2 {
+    background: linear-gradient(115deg, #ffc0ad, #fffffe);
+    bottom: -20px;
+    right: 250px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.shape3 {
+    bottom: 343px;
+    right: 30px;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    z-index: 1; /* Cambiado a 1 para que esté arriba del elemento .clock */
+}
+
+
+
+
+
+.left-div {
+    position: absolute;
+    left: -170px; /* Ajusta la distancia desde la izquierda */
+    top: 13%; /* Ajusta la distancia desde arriba */
+    transform: translateX(-120%);
+    height: 30%;
+    width: 55%;
+    padding: 1px 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    border: 1.5px solid rgba(255, 255, 255, 0.86);
+}
+
+
+/* Estilos del temporizador */
+.timer {
+    position:relative;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+h1.timer1 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+.wrapper {
+    text-align: center;
+}
+
+#time {
+    font-size: 40px;
+    display: inline-block;
+}
+
+#day {
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e1dfff;
+    text-align: center;
+}
+
+#midday {
+    display: inline-block;
+    font-size: 30px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(15px);
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.86);
+    border-radius: 8px;
+}
+
+
+
+.rigth-div {
+    position: absolute;
+    left: 790px; /* Ajusta la distancia desde la izquierda */
+    top: 13%; /* Ajusta la distancia desde arriba */
+    transform: translateX(-120%);
+    height: auto;
+    width: 55%;
+    padding: 1px 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    border: 1.5px solid rgba(255, 255, 255, 0.86);
+}
+
+
+      /* Estilos para los iconos de redes sociales */
+        .social {
+            background-color: rgba(0, 0, 0, 0.26);
+        font-size: 12px;
+        color: #fff3ec;
+        text-decoration: none;
+        margin: 0 0px;
+        transition: color 0.4s ease;
+        font-size: 21px;
+        margin: 20px;
+    }
+    
+
+
+      /* Efecto hover */
+      /* Efecto hover con escala */
+    .social:hover {
+        color: rgba(3, 206, 229, 0.86);
+        transform: scale(1.3); /* Escala el ícono un 20% más grande al hacer hover */
+    }
+        /* Ajusta otros estilos según tus necesidades */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        height: 100vh;
+    
+    }
+
+
+
+
+.clock {
+    height: 90%;
+    width: 90%;
+    backdrop-filter: blur(19px);
+    padding: 50px 15px;
+    box-shadow: 0 25px 23px rgba(231, 143, 179, 0.12);
+    border: 1.5px solid rgba(255, 255, 255, 0.86);
+    border-radius: 10px;
+}
+
+
+
+
+.shape1 {
+    background: linear-gradient(115deg, #e78fb3, #9656a1);
+    bottom: 396px;
+    right: -45px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+.shape2 {
+    background: linear-gradient(115deg, #ffc0ad, #fffffe);
+    bottom: -2px;
+    right: 270px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.shape3 {
+    bottom: 343px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1; /* Cambiado a 1 para que esté arriba del elemento .clock */
+}
+
+.rigth-div {
+display: none;
+}
+
+}
